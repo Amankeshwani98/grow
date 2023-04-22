@@ -1,0 +1,94 @@
+{
+  "kind": "collectionType",
+  "collectionName": "business_users",
+  "info": {
+    "singularName": "business-user",
+    "pluralName": "business-users",
+    "displayName": "businessUser",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female",
+        "other"
+      ],
+      "default": "male",
+      "required": true
+    },
+    "businessName": {
+      "type": "string",
+      "required": true
+    },
+    "businessType1": {
+      "type": "string",
+      "required": true
+    },
+    "businessType2": {
+      "type": "string"
+    },
+    "openingTime": {
+      "type": "string",
+      "required": true
+    },
+    "closingTime": {
+      "type": "string",
+      "required": true
+    },
+    "homeDelivery": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "landline": {
+      "type": "biginteger"
+    },
+    "mobile": {
+      "type": "biginteger",
+      "required": true
+    },
+    "whatsAppNumber": {
+      "type": "biginteger"
+    },
+    "state": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "password": {
+      "type": "string",
+      "required": true
+    },
+    "formFilledByAgent": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "agentId": {
+      "type": "string"
+    }
+  }
+}

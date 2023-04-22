@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "service_users",
+  "info": {
+    "singularName": "service-user",
+    "pluralName": "service-users",
+    "displayName": "serviceUser",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "whatsAppNumber": {
+      "type": "biginteger",
+      "unique": true
+    },
+    "address": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email",
+      "unique": true
+    },
+    "formFilledByAgent": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "agentID": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "AID123456",
+        "AID678901"
+      ],
+      "default": "none"
+    },
+    "password": {
+      "type": "string",
+      "required": true
+    },
+    "mobile": {
+      "type": "biginteger",
+      "required": true
+    },
+    "openingTime": {
+      "type": "string"
+    },
+    "closingTime": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "firstOccupation": {
+      "type": "string",
+      "required": true
+    },
+    "lastOccupation": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

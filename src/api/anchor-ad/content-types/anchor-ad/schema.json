@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "anchor_ads",
+  "info": {
+    "singularName": "anchor-ad",
+    "pluralName": "anchor-ads",
+    "displayName": "anchorAd",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ownerName": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "businessName": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "maxLength": 150
+    },
+    "phoneNumber": {
+      "type": "biginteger",
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

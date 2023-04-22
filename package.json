@@ -1,0 +1,35 @@
+{
+  "name": "grow-work-app",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "yarn run develop --watch-admin",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-documentation": "^4.1.7",
+    "@strapi/plugin-i18n": "4.1.5",
+    "@strapi/plugin-users-permissions": "4.1.5",
+    "@strapi/strapi": "4.1.5",
+    "bcrypt": "^5.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "8.6.0",
+    "razorpay": "^2.8.1",
+    "regenerator-runtime": "^0.13.11",
+    "yarn": "^1.22.18"
+  },
+  "author": {
+    "name": "Sagar Tamrakar"
+  },
+  "strapi": {
+    "uuid": "0f5681e5-74f8-40d2-bbde-10be760d9c26"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
